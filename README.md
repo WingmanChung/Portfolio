@@ -1,3 +1,3 @@
 # portfolio
 
-Website link: wingmanchung.github.io/portfolio
+Website link: wingmanchung.github.io/Portfolio

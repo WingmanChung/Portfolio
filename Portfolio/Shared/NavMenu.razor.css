@@ -1,7 +1,61 @@
-.nav-items{
-    flex-direction: column;
+.nav-bar {
+    overflow: hidden;
 }
 
-.nav-link{
-    
+.nav-bar a{
+    color: white;
+    text-align: center;
+}
+
+.nav-items{
+    list-style-type: none;
+    display: flex !important;
+    margin: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background: rgb(196, 196, 196, 0.5);
+    min-width: 160px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+    min-width: 160px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content, .second-layer:hover .second-layer-content a {
+    display: block;
+}
+
+.nav-bar a:hover, .dropdown:hover .dropdownbtn {
+    background: rgb(141, 141, 141, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.second-layer-content {
+    position: relative;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+}
+.second-layer-content a {
+    display: none;
+}
+
+.navbar-brand:hover {
+    background: none; /*Fix -> hide hover effect for brand*/
 }

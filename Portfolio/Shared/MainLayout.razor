@@ -1,15 +1,88 @@
 @inherits LayoutComponentBase
 
+<MudThemeProvider Theme="darkTheme"/>
+<MudDialogProvider />
+<MudSnackbarProvider />
+
 <div class="page">
     <div class="bg">
-        <div class="header">
-            <NavMenu />
-        </div>
-
-        <div class="main">
-            <div class="content">
-                @Body
+        <MudPaper Style="background-color: transparent;" Elevation="0">
+            <MudDrawerContainer Class="mud-height-full">
+                <MudDrawer @bind-Open="@open" Fixed="false" Elevation="1" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true" Width="auto">
+                    <MudNavMenu>
+                        <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Filled.Home">Home</MudNavLink>
+                        <MudNavGroup Title="Introductie" Icon="@Icons.Filled.AssignmentInd" Expanded="false">
+                            <MudNavLink Href="introductie" Icon="@Icons.Filled.People">Voorwoord</MudNavLink>
+                            <MudNavLink Href="introductie" Icon="@Icons.Filled.LocalLibrary">Inleiding</MudNavLink>
+                        </MudNavGroup>
+                        <MudNavLink Href="stageplan" Icon="@Icons.Filled.Assignment">Stageplan</MudNavLink>
+                        <MudNavGroup Title="Leerdoelen" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                            <MudNavGroup Title="Competentie I: Manage en Control" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/ManageEnControl" Icon="@Icons.Filled.AssignmentLate">SVN</MudNavLink>
+                            </MudNavGroup>
+                            <MudNavGroup Title="Competentie II: Analyseren" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/Analyseren" Icon="@Icons.Filled.AssignmentLate">Requirementsanalyse</MudNavLink>
+                                <MudNavLink Href="Leerdoelen/Analyseren" Icon="@Icons.Filled.AssignmentLate">Onderzoek</MudNavLink>
+                            </MudNavGroup>
+                            <MudNavGroup Title="Competentie III: Adviseren" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/Adviseren" Icon="@Icons.Filled.AssignmentLate">Adviesrapport</MudNavLink>
+                            </MudNavGroup>
+                            <MudNavGroup Title="Competentie IV: Ontwerpen" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/Ontwerpen" Icon="@Icons.Filled.AssignmentLate">UML-diagrammen</MudNavLink>
+                                <MudNavLink Href="Leerdoelen/Ontwerpen" Icon="@Icons.Filled.AssignmentLate">ERD</MudNavLink>
+                            </MudNavGroup>
+                            <MudNavGroup Title="Competentie V: Realiseren" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/Realiseren" Icon="@Icons.Filled.AssignmentLate">Implementatie</MudNavLink>
+                                <MudNavLink Href="Leerdoelen/Realiseren" Icon="@Icons.Filled.AssignmentLate">Nieuwe technologie</MudNavLink>
+                            </MudNavGroup>
+                            <MudNavGroup Title="Competentie VI: Professional Skills" Icon="@Icons.Custom.Uncategorized.Folder" Expanded="false">
+                                <MudNavLink Href="Leerdoelen/ProfessionalSkills" Icon="@Icons.Filled.AssignmentLate">Werkwijze, regels en procedures</MudNavLink>
+                                <MudNavLink Href="Leerdoelen/ProfessionalSkills" Icon="@Icons.Filled.AssignmentLate">Zelfstandigheid</MudNavLink>
+                            </MudNavGroup>
+                        </MudNavGroup>
+                        <MudNavLink Href="advies" Icon="@Icons.Filled.NoteAlt">Advies</MudNavLink>
+                        <MudSpacer />
+                        <MudNavLink Href="https://github.com/WingmanChung" Target="blank" Icon="@Icons.Custom.Brands.GitHub">Wing Man's Github</MudNavLink>
+                    </MudNavMenu>
+                </MudDrawer>
+            </MudDrawerContainer>
+            <div class="mud-height-full" style="margin-left: 300px; margin-right: 300px;">
+                <div class="content">
+                    @Body
+                </div>
             </div>
-        </div>
+        </MudPaper>
+        <MudScrollToTop>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Filled.ArrowCircleUp" />
+        </MudScrollToTop>
     </div>
 </div>
+
+@code
+{
+    public bool open = false;
+
+    MudTheme darkTheme = new MudTheme()
+    {
+        Palette = new Palette()
+        {
+            Black = "#27272f",
+            DrawerBackground = "#333333",
+            DrawerText = "rgba(255,255,255, 0.75)",
+            DrawerIcon = "rgba(255,255,255, 0.75)",
+            AppbarBackground = "#27272f",
+            AppbarText = "rgba(255,255,255, 0.70)",
+            TextPrimary = "rgba(255,255,255, 0.70)",
+            TextSecondary = "rgba(255,255,255, 0.50)",
+            ActionDefault = "#adadb1",
+            ActionDisabled = "rgba(255,255,255, 0.26)",
+            ActionDisabledBackground = "rgba(255,255,255, 0.12)",
+            Divider = "rgba(255,255,255, 0.12)",
+            DividerLight = "rgba(255,255,255, 0.06)",
+            TableLines = "rgba(255,255,255, 0.12)",
+            LinesDefault = "rgba(255,255,255, 0.12)",
+            LinesInputs = "rgba(255,255,255, 0.3)",
+            TextDisabled = "rgba(255,255,255, 0.2)"
+        }
+    };
+}

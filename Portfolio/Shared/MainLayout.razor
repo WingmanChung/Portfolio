@@ -14,7 +14,7 @@
     <div class="page">
         <MudPaper Style="background-color: transparent;" Elevation="0">
             <MudDrawerContainer>
-                <MudDrawer @bind-Open="@open" Fixed="false" Elevation="1" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true" Width="auto">
+                <MudDrawer @bind-Open="@open" Fixed="false" Elevation="1" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true" Width="auto" Style="position: fixed;">
                     <MudNavMenu>
                         <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Filled.Home">Home</MudNavLink>
                         <MudNavGroup Title="Introductie" Icon="@Icons.Filled.AssignmentInd" Expanded="false">
@@ -51,12 +51,12 @@
                         <MudNavLink Href="https://github.com/WingmanChung" Target="blank" Icon="@Icons.Custom.Brands.GitHub">Wing Man's Github</MudNavLink>
                     </MudNavMenu>
                 </MudDrawer>
-            </MudDrawerContainer>
-            <div style="margin-left: 300px; margin-right: 300px;">
-                <div class="content">
-                    @Body
+                <div style="margin-left: 300px; margin-right: 300px;">
+                    <div class="content">
+                        @Body
+                    </div>
                 </div>
-            </div>
+            </MudDrawerContainer>
         </MudPaper>
         <MudScrollToTop>
             <MudFab Color="Color.Tertiary" Icon="@Icons.Filled.ArrowCircleUp" />

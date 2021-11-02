@@ -2,12 +2,12 @@
     height: 100%;
 }
 
-h1, h2, h3, h5, p {
+h1, h2, h3, h5, p, dl, dt {
     color: white;
 }
 
 img {
-    margin-bottom: 15px;
+    width: 80%;
 }
 
 .description p{

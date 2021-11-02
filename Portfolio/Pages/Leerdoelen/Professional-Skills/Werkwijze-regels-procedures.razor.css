@@ -6,14 +6,23 @@ h1, h2, h3, h5, p, dl, dt {
     color: white;
 }
 
-img {
-    width: 80%;
-}
-
 .description p{
     margin-bottom: 0;
 }
 
-img{
-    width: 80%;
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
+
+/*@media screen and (min-width: 1074px) {
+    img {
+        width: 80%;
+    }
+
+@media screen and (max-width: 1074px){
+    img{
+        width: 100%;
+    }
+}*/

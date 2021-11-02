@@ -6,10 +6,12 @@ h1, h2, h3, h5, p {
     color: white;
 }
 
-img {
-    width: 50%;
-}
-
 .description p {
     margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }

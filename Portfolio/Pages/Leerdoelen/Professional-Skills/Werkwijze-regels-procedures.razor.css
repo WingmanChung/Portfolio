@@ -13,3 +13,7 @@ img {
 .description p{
     margin-bottom: 0;
 }
+
+img{
+    width: 80%;
+}

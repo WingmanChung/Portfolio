@@ -9,21 +9,37 @@
     en libraries.”</p><br />
 
 <h3>Inleiding</h3>
+<p>
+    Deze pagina beschrijft de UML-diagram van de nieuwe rapportagetool die ik samen met Wing Yee heb gemaakt tijdens mijn stage. Voor de proof-of-concept testen we alleen de must have requirements. 
+    Hiervoor hebben we ook een aparte UML-diagram gemaakt. Met behulp van een UML-diagram hebben we een grafisch overzicht van de requirements en zien we snel en eenvoudig de relaties tussen 
+    verschillende requirements. Hieronder zal ik de UML-diagram uitleggen die ik samen met Wing Yee heb gemaakt.
+</p>
+<br />
 
-•	Maximaal ½ A4 per leerdoel<br />
-•	Voor elk leerdoel per competentie een inleiding, waarin je uitlegt;<br />
-o	Wat je bewijslast precies inhoudt<br />
-o	Welke stappen je hebt genomen om hiertoe te komen/welk leerproces je hebt doorgemaakt<br />
-o	Wat je ervan hebt geleerd<br />
+<h5>UML-diagram</h5>
+<p>
+    Met een UML-Diagram kan je een systeem visueel weergeven, samen met de belangrijkste actoren, rollen, acties, artefacten of klassen, om informatie over het system beter te begrijpen, te wijzigen,
+    te onderhouden of te documenteren. De Unified Modeling Language (UML) is een modelmatige taal om objectgeoriënteerde analyses en ontwerpen voor een systeem te kunnen maken.
+    Voor dit leerdoel heb ik een UML Use Case Diagram gemaakt (zie Bewijslast I). Met een Use Case Diagram kan je de details van een systeem en de gebruikers binnen dat systeem samenvatten.
+    Een Use Case is een methodologie om systeemvereisten te identificeren, te verduidelijken en te organiseren.
+    <br /><br />
+    De actoren (in dit geval de gebruikers) zet je <b><i>buiten</i></b> aan de linkerkant van het systeem neer. Met een generalisatie pijl kan je de afstammelingen van die actor laten zien.
+    Zo stamt de actor "developer" af van de actor "User". De vaste lijnen laten zien wat een actor allemaal kan doen. De "include" en "extend" pijlen zijn gestippeld en laten de relaties tussen de use cases zien.
+    Als er een Use Case "A" en "B" is met een "extend" pijl die richting use case "A" wijst, betekent het dat proces A uitgevoerd kan worden zonder proces B. Proces B is dus optioneel en hoeft niet uitgevoerd
+    te worden om proces A te voltooien. Denk hierbij aan een inlogsysteem. Je kan inloggen (proces A) zonder de functie 'wachtwoord vergeten?' uit te voeren (proces B).
+    Als er een Use Case "A" en "B" is met een "include" pijl die richting use case "B" wijst, betekent het dat proces A niet uitgevoerd kan worden zonder proces B. Proces B moet dus uitgevoerd worden om 
+    proces A te kunnen voltooien. Denk hierbij aan het Denk hierbij aan het aanmaken van een nieuwe account (proces A) waarbij je een emailadres moet bevestigen (proces B) om de registratie te voltooien.
+    Verder begint een use case altijd met een werkwoord.
+</p>
 <br />
 
 <h3>Bewijs</h3>
 
 <h5>Bewijslast I</h5>
-Toelichting bewijslast I<br />
-<h5>Bewijslast II (optioneel)</h5>
-Toelichting bewijslast II<br />
-<br />
+<p class="description">
+    In de onderstaande afbeelding zie je de Use Case Diagram die ik samen met Wing Yee heb opgesteld voor de nieuwe rapportagetool van Ranshuijsen BV.<br /><br />
+    <img src="images/UseCaseDiagram.jpg" />
+</p>
 
 <h3>Feedback</h3>
 Feedback van bedrijfsbegeleider/collega<br />

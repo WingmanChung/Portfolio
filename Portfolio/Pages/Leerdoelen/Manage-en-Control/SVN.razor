@@ -8,36 +8,147 @@
 <p>“Ik wil na afloop van mijn 3e jaar stage in staat zijn om SVN te gebruiken als version control systeem.”</p><br />
 
 <h3>Inleiding</h3>
+<p>
+    Ranshuijsen BV maakt gebruik van Apache Subversion (SVN) voor het beheren van hun broncode voor software projecten. Aangezien ik alleen ervaring had met Git, 
+    een gedistribueerd versiebeheersysteem, leek het mij zinvol om ook meer over andere versiebeheersystemen te leren. Voordat ik met mijn stage begon, wist ik 
+    namelijk niet dat er verschillende versiebeheersystemen waren. Door SVN, een gecentraliseerd versiebeheersysteem, te gebruiken, leer ik meer over de verschillen 
+    tussen gecentraliseerde en gedistribueerde versiebeheersystemen. Dit kan handig zijn wanneer ik in de toekomst gebruik moet maken van een gecentraliseerd 
+    versiebeheersysteem, zoals SVN. Hieronder lees je meer over mijn ervaring met SVN vergeleken met Git.
+</p>
+<br />
 
-•	Maximaal ½ A4 per leerdoel<br />
-•	Voor elk leerdoel per competentie een inleiding, waarin je uitlegt;<br />
-o	Wat je bewijslast precies inhoudt<br />
-o	Welke stappen je hebt genomen om hiertoe te komen/welk leerproces je hebt doorgemaakt<br />
-o	Wat je ervan hebt geleerd<br />
+<h5>SVN vs. Git</h5>
+<p>
+    Met een versiebeheersysteem kan de broncode op een server beheerd worden. Het kiezen van een gecentraliseerd (zoals SVN) of gedistribueerd versiebeheersysteem 
+    (zoals Git) heeft invloed op hoe de wijzigingen worden vastgelegd (Irabor, z.d.).
+    <br /><br />
+    Bij een gecentraliseerd versiebeheersysteem worden alle bestanden en historische gegevens opgeslagen op een centrale server (Backlog, 2018). Wijzigingen worden 
+    rechtstreeks vastgelegd in de centrale serverrepository. Op één centrale server werken betekent echter dat er een single point of failure is. Als er een fout is, 
+    kan deze alle builds vernietigen. Andere developers kunnen hun code niet vastleggen, totdat de repository gerepareerd is. Daarnaast is er beperkte offline toegang, 
+    omdat gecentraliseerde versiebeheersystemen afhankelijk zijn van een internetverbinding.
+    <br /><br />
+    Een gedistribueerd versiebeheersysteem heeft meerdere repositories: een centrale repository en meerdere lokale repositories (Backlog, 2018). Lokale repositories 
+    zijn exacte kopieën van de centrale repository, compleet met de volledige historie van wijzigingen. Hierdoor is offline werken mogelijk met gedistribueerde 
+    versiebeheersystemen. Vergeleken met gecentraliseerde versiebeheersystemen, verliezen ze geen functies als ze de internetverbinding verliezen. Ook is het vastleggen 
+    sneller, aangezien je lokaal werkt en af en toe commit aan de centrale repository.
+    <br /><br />
+    Hieronder zijn de voor- en nadelen van SVN en Git naast elkaar gezet, zodat je een duidelijk overzicht hebt van de verschillen tussen deze twee versiebeheersystemen (Strato, z.d.).
+</p>
+    <table>
+      <tr>
+        <th><p>SVN</p></th>
+        <th><p>Git</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Makkelijker te leren (simpele commando’s en code wordt gehost op één plek)</p></th>
+        <th><p>•   Moeilijker te leren (meer concepten en commando’s)</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Eén centrale repository</p></th>
+        <th><p>•   Eén centrale repository en meerdere lokale repositories</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Branching en merging is tijdrovend</p></th>
+        <th><p>•   Branching en merging is minder complex vergeleken met SVN</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Minder snel en lightweight vergeleken met Git</p></th>
+        <th><p>•   Werkt sneller en is meer lightweight vergeleken met SVN</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Maakt gebruik van een volgnummersysteem, wat makkelijker te begrijpen is</p></th>
+        <th><p>•   Maakt gebruik van SHA-1 codes, wat moeilijker te begrijpen is</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Internetverbinding is vereist voor de meeste functies</p></th>
+        <th><p>•   Internetverbinding is niet vereist voor Git functies</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Gebruiker heeft alleen een kopie van een trunk</p></th>
+        <th><p>•   Gebruiker heeft een kopie van de hele repository</p></th>
+      </tr>
+    </table>
+<p>
+    <br />
+    Het kiezen van een versiebeheersysteem kan verschillend zijn voor alle teams en alle behoeften (Backlog, 2018). Om te bepalen welke versiebeheersysteem je moet gebruiken, 
+    moet er gekeken worden naar hoe elk systeem werkt.
+
+    Zelf vond ik SVN erg makkelijk om mee te werken. Binnen een dag begreep ik al hoe je code wijzingen kon vastleggen of je code kon updaten. Door één keer op de rechtermuisknop 
+    te drukken, kan je de repository updaten (zie Bewijslast I) of je code wijzigingen vastleggen (zie Bewijslast II). De leercurve bij SVN om code wijzingen vast te leggen en 
+    code te updaten, is een stuk lager vergeleken met Git. Dit komt onder andere doordat Git meer concepten en commando’s heeft. Ondanks de lage leercurve bij SVN, zou ik in de 
+    toekomst eerder voor Git kiezen. Dit komt doordat er verschillende Git clients zijn om repositories te beheren. Hierdoor hoef je de Git commando’s niet te onthouden en kan je 
+    de code wijzigingen met een druk op de knop vastleggen. Het is dan ook een stuk makkelijker geworden om Git te gebruiken. Daarnaast bieden Git clients (zoals GitHub) ook 
+    andere mogelijkheden naast het beheren van git-repositories, zoals het hosten van een static website of het bekijken van andermans git-repositories. Zo kon ik tijdens mijn 
+    stage proef demo’s van rapportagetools downloaden via de GitHub profiel van de bedrijven die de rapportagetool leveren. Een andere reden voor mij om Git te kiezen, is om niet 
+    afhankelijk te zijn van een internetverbinding. Git vereist alleen een internetverbinding voor het synchroniseren van de lokale repository. SVN vereist echter een 
+    internetverbinding voor de meeste functies.
+</p>
 <br />
 
 <h3>Bewijs</h3>
 
 <h5>Bewijslast I</h5>
-Toelichting bewijslast I<br />
-<h5>Bewijslast II (optioneel)</h5>
-Toelichting bewijslast II<br />
+<p class="description">
+    In de onderstaande afbeelding zie je hoe de lokale repository bijgewerkt kan worden en hoe code wijzigingen vastgelegd kunnen worden. Aan de linkerkant is een scherm waar je 
+    code wijzigingen kan vastleggen. Aan de rechterkant zie je de beschikbare SVN functies. Zelf gebruikte ik vooral de ‘Update’, ‘Commit’ en ‘Show log’ functies. Bij merge 
+    conflicten maak ik gebruik van de ‘Resolve’ functie.<br /><br />
+    <img src="images/SVNOptions.jpg" />
+</p>
+<br />
+<br />
+
+<h5>Bewijslast II</h5>
+<p class="description">
+    In de onderstaande afbeelding zie je een deel van mijn commits die ik heb gemaakt tijdens mijn stage.<br /><br />
+    <img src="images/SVNCommits.jpg" />
+</p>
+<br />
 <br />
 
 <h3>Feedback</h3>
-Feedback van bedrijfsbegeleider/collega<br />
+<p class="description">
+    Voor mij is source control een basaal iets. Je kan alleen bijdragen aan een systeem waar continue in ontwikkeld wordt als je de source control systemen beheerst. Als je je 
+    verder verdiept in SVN zul je zien dat ze ook ondersteuning hebben voor offline (distributed), maar dat hebben wij hier niet nodig op dit moment.
+</p>
+<br />
 <br />
 
 <h3>Reflectie</h3>
-Reflectie op feedback van bedrijfsbegeleider/collega<br />
-•	Welke feedback heb je verkregen?<br />
-•	Wat heb je van deze feedback geleerd?<br />
-•	Wat heb je met de feedback gedaan?<br />
-•	Wat zou je een volgende keer anders doen?<br />
-•	Uiteraard kun je hier zelf verdere invulling aan geven in overleg met je stagedocent.<br />
+<p class="description">
+    Met de bovenstaande feedback bedoelt Rim dat ik SVN correct heb gebruikt. Als ik me verder had verdiept in SVN, zou ik ook ontdekt hebben dat SVN ook ondersteuning heeft voor 
+    offline werken. Ranshuijsen BV heeft dat echter momenteel niet nodig.
 
+    Van zijn feedback heb ik geleerd dat ik me nog wat verder in SVN had kunnen verdiepen, zodat ik ontdekte dat SVN ook ondersteuning heeft voor offline werken. Zo ben ik 
+    uiteindelijk Git-SVN tegengekomen (Git-scm, z.d.). Je kan dan zowel gebruik maken van Git als SVN. Wanneer je online bent, maak je gebruik van SVN om codewijzigingen 
+    vast te leggen. Voordat je offline gaat, maak je gebruik van de commando ‘git svn rebase’ om je Git repository te synchroniseren met je SVN repository. Wanneer je offline bent, 
+    kan je dan de codewijzigingen via Git vastleggen. Ik heb geleerd dat ik me soms verder moet verdiepen in een onderwerp om te kijken of er geen alternatieven zijn, wanneer er 
+    bijvoorbeeld wordt gezegd dat er geen offline ondersteuning is.
+    
+    Verder weet ik nu beter waar ik rekening mee moet houden, als ik in de toekomst ooit een versiebeheersysteem moet uitkiezen. Ook weet ik nu hoe ik met SVN mijn repository 
+    kan updaten, codewijzigingen kan vastleggen en merge-conflicten oplossen (zie Bewijslast I). Daarnaast weet ik nu de verschillen tussen Git en SVN. In de toekomst zou ik deze 
+    kennis kunnen gebruiken, mocht ik bij een bedrijf gaan werken dat SVN gebruikt.
+
+    Als ik ooit nog een keer met SVN zou werken, zou ik proberen meer over de andere functionaliteiten te leren, zoals het aanmaken van een nieuwe branch en het mergen van een branch 
+    met de trunk van een SVN repository. Deze functionaliteiten waren namelijk niet nodig geweest tijdens mijn stage. 
+
+    Zelf denk ik dat ik dit leerdoel heb behaald, omdat ik tijdens de implementatie van de gekozen rapportagetool in het CRM systeem van Ranshuijsen BV veel met SVN heb gewerkt. Ik 
+    heb regelmatig mijn codewijzigingen vastgelegd, update mijn repository voordat ik codewijzigingen vastleg, controleer altijd of er geen build-errors zijn voordat ik codewijzigingen 
+    vastleg en kan eventuele merge-conflicten gemakkelijk oplossen. 
+</p>
+<br />
 <br />
 
+<h3>Literatuurlijst</h3>
+<p class="apa-source">Backlog. (2018, April 4). <i>Git vs. SVN: Which version control system is right for you?</i> Opgehaald van Backlog:</p>
+<p class="tab">https://backlog.com/blog/git-vs-svn-version-control-system/</p>
+<p class="apa-source">Git-scm. (z.d.). <i>git-svn Documentation.</i> Opgehaald van Git-scm:</p>
+<p class="tab">http://git-scm.com/docs/git-svn</p>
+<p class="apa-source">Irabor, J. (z.d.). <i>Git vs. SVN - Help me Decide.</i> Opgehaald van Stackshare:</p>
+<p class="tab">https://stackshare.io/stackups/git-vs-svn</p>
+<p class="apa-source">Strato. (z.d.). <i>Git vs. SVN - Over verdeeld en gecentraliseerd versiebeheer.</i> Opgehaald van Strato:</p>
+<p class="tab">https://www.strato.nl/cloud-storage/git-vs-svn-versiebeheer-vergeleken/</p>
+<br />
+<br />
 @code {
 
 }

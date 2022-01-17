@@ -10,26 +10,50 @@
 
 <h3>Inleiding</h3>
 <p>
-    Deze pagina beschrijft de UML-diagram van de nieuwe rapportagetool die ik samen met Wing Yee heb gemaakt tijdens mijn stage. Voor de proof-of-concept testen we alleen de must have requirements. 
-    Hiervoor hebben we ook een aparte UML-diagram gemaakt. Met behulp van een UML-diagram hebben we een grafisch overzicht van de requirements en zien we snel en eenvoudig de relaties tussen 
-    verschillende requirements. Hieronder zal ik de UML-diagram uitleggen die ik samen met Wing Yee heb gemaakt.
+    Deze pagina beschrijft de UML-diagrammen van de nieuwe rapportagetool die ik samen met mijn mede-stagiaire Wing Yee of in mijn eentje heb gemaakt tijdens mijn stage. 
+    Met behulp van een UML-diagram hebben we een grafisch overzicht van de requirements en zien we snel en eenvoudig de relaties tussen verschillende requirements. 
+    Hieronder zal ik de Use Case Diagram die Wing Yee en ik samen hebben gemaakt en de Class Diagram die ik zelf heb gemaakt uitleggen.
 </p>
 <br />
 
 <h5>UML-diagram</h5>
 <p>
-    Met een UML-Diagram kan je een systeem visueel weergeven, samen met de belangrijkste actoren, rollen, acties, artefacten of klassen, om informatie over het system beter te begrijpen, te wijzigen,
-    te onderhouden of te documenteren. De Unified Modeling Language (UML) is een modelmatige taal om objectgeoriënteerde analyses en ontwerpen voor een systeem te kunnen maken.
-    Voor dit leerdoel heb ik een UML Use Case Diagram gemaakt (zie Bewijslast I). Met een Use Case Diagram kan je de details van een systeem en de gebruikers binnen dat systeem samenvatten.
-    Een Use Case is een methodologie om systeemvereisten te identificeren, te verduidelijken en te organiseren.
+    Met een UML-diagram kan je een systeem visueel weergeven, samen met de belangrijkste actoren, rollen, acties, artefacten of klassen, om informatie over het systeem 
+    beter te begrijpen, te wijzigen, te onderhouden of te documenteren (Lynch, 2021). De Unified Modeling Language (UML) is een modelmatige taal om objectgeoriënteerde 
+    analyses en ontwerpen voor een systeem te kunnen maken.
+</p>
+<br />
+
+<h5>Use Case diagram</h5>
+<p>
+    Voor dit leerdoel heb ik samen met Wing Yee een UML Use Case diagram gemaakt (zie Bewijslast I). Met een Use Case diagram kan je de details van een systeem en de 
+    gebruikers binnen dat systeem samenvatten (Lucidchart, z.d.). Een Use Case diagram is een methodologie om systeemvereisten te identificeren, te verduidelijken en 
+    te organiseren. Daarnaast is het ook ideaal voor het vertegenwoordigen van de doelen van systeem-gebruiker interacties en de modellering van de basisstroom van 
+    gebeurtenissen in een Use Case.
     <br /><br />
-    De actoren (in dit geval de gebruikers) zet je <b><i>buiten</i></b> aan de linkerkant van het systeem neer. Met een generalisatie pijl kan je de afstammelingen van die actor laten zien.
-    Zo stamt de actor "developer" af van de actor "User". De vaste lijnen laten zien wat een actor allemaal kan doen. De "include" en "extend" pijlen zijn gestippeld en laten de relaties tussen de use cases zien.
-    Als er een Use Case "A" en "B" is met een "extend" pijl die richting use case "A" wijst, betekent het dat proces A uitgevoerd kan worden zonder proces B. Proces B is dus optioneel en hoeft niet uitgevoerd
-    te worden om proces A te voltooien. Denk hierbij aan een inlogsysteem. Je kan inloggen (proces A) zonder de functie 'wachtwoord vergeten?' uit te voeren (proces B).
-    Als er een Use Case "A" en "B" is met een "include" pijl die richting use case "B" wijst, betekent het dat proces A niet uitgevoerd kan worden zonder proces B. Proces B moet dus uitgevoerd worden om 
-    proces A te kunnen voltooien. Denk hierbij aan het Denk hierbij aan het aanmaken van een nieuwe account (proces A) waarbij je een emailadres moet bevestigen (proces B) om de registratie te voltooien.
-    Verder begint een use case altijd met een werkwoord.
+    De actoren (in dit geval de gebruikers) zet je buiten aan de linkerkant van het systeem neer. Met een generalisatie pijl kan je de afstammelingen van die actor laten 
+    zien. Zo stamt de actor "developer" af van de actor "User". De vaste lijnen laten zien wat een actor allemaal kan doen. De "include" en "extend" pijlen zijn gestippeld 
+    en laten de relaties tussen de Use Cases zien. Als er een Use Case "A" en "B" is met een "extend" pijl die richting Use Case "A" wijst, betekent het dat proces A 
+    uitgevoerd kan worden zonder proces B. Proces B is dus optioneel en hoeft niet uitgevoerd te worden om proces A te voltooien. Denk hierbij aan een inlogsysteem. Je kan 
+    inloggen (proces A) zonder de functie 'wachtwoord vergeten?' uit te voeren (proces B). Als er een Use Case "A" en "B" is met een "include" pijl die richting Use Case 
+    "B" wijst, betekent het dat proces A niet uitgevoerd kan worden zonder proces B. Proces B moet dus uitgevoerd worden om proces A te kunnen voltooien. Denk hierbij aan 
+    het aanmaken van een nieuwe account (proces A) waarbij je een emailadres moet bevestigen (proces B) om de registratie te voltooien. Verder begint een Use Case altijd 
+    met een werkwoord.
+</p>
+<br />
+
+<h5>Class diagram</h5>
+<p>
+    Naast de Use Case diagram die ik samen met Wing Yee heb gemaakt, heb ik zelf nog een Class diagram gemaakt (zie Bewijslast II). In mijn stageplan staat dat ik voor dit 
+    leerdoel ook nog een flowchart zou maken, maar tijdens mijn stage ben ik erachter gekomen dat een flowchart minder goed bij mijn project past vergeleken met een Class diagram. 
+    <br /><br />
+    Een flowchart is in tegenstelling tot de Class diagram geen UML diagram. Het is namelijk bedoeld voor tijdens het programmeren waarbij de flowchart een grafisch diagram is 
+    dat een algoritme vertegenwoordigd. Je volgt een proces van begin tot eind en kan onderweg ‘ja of nee’ keuzes maken. Een aantal redenen voor het toepassen van flowcharts 
+    zijn het identificeren van fouten/afwijkingen in een proces en om te kijken welke deelprocessen gemonitord moeten worden (Leaninfo, 2017). Aangezien ik een ontwerp wil 
+    maken voor de gekozen rapportagetool en niet voor een deelproces van een applicatie, heb ik gekozen om een Class diagram te maken. De Class diagram vind ik nuttiger voor 
+    dit project, omdat het de relaties tussen systeemcomponenten op vele niveaus kan laten zien en hoe ik van plan ben die componenten te implementeren. Met een Class diagram 
+    kan ik van tevoren al bedenken welke attributen en methodes ik later nog heb, zodat ik tijdens het programmeren een duidelijk beeld heb van welke klassen er geïmplementeerd 
+    moeten worden en hoe ik deze kan implementeren.
 </p>
 <br />
 
@@ -39,20 +63,62 @@
 <p class="description">
     In de onderstaande afbeelding zie je de Use Case Diagram die ik samen met Wing Yee heb opgesteld voor de nieuwe rapportagetool van Ranshuijsen BV.<br /><br />
     <img src="images/UseCaseDiagram.jpg" />
+    <br /><br />
+    Naast de Use Case diagram zijn er ook nog Use Case descriptions toegevoegd om een aantal Use Cases uit te leggen. Hieronder zie je de Use Case descriptions die ik heb geschreven.<br /><br />
+    <div class="pdfviewer">
+        <embed src="pdf/UseCaseDescriptions.pdf" style="height: 100vh; width: 100%;" />
+    </div>
 </p>
 
+<h5>Bewijslast II</h5>
+<p class="description">
+    In de onderstaande afbeelding zie je de Class diagram die ik heb gemaakt.<br /><br />
+    <img src="images/ClassDiagram.jpg" />
+</p>
+<br />
+<br />
+
 <h3>Feedback</h3>
-Feedback van bedrijfsbegeleider/collega<br />
+<p class="description">
+    Zoals vaker gezegd is de output in de vorm van diagrammen vaak van ondergeschikt belang t.o.v. het proces van het maken van de diagrammen waarin je leert welke uitdagingen er zitten 
+    in het realiseren van software. De diagrammen waar stof tot gesprek komt, om helder te krijgen hoe het systeem gebouwd moest gaan worden.
+</p>
+<br />
 <br />
 
 <h3>Reflectie</h3>
-Reflectie op feedback van bedrijfsbegeleider/collega<br />
-•	Welke feedback heb je verkregen?<br />
-•	Wat heb je van deze feedback geleerd?<br />
-•	Wat heb je met de feedback gedaan?<br />
-•	Wat zou je een volgende keer anders doen?<br />
-•	Uiteraard kun je hier zelf verdere invulling aan geven in overleg met je stagedocent.<br />
-
+<p class="description">
+    Met de bovenstaande feedback bedoelt Rim dat ik de UML-diagrammen wel correct heb opgesteld, maar hier niet helemaal aan heb gehouden tijdens de implementatie van de gekozen 
+    rapportagetool in het CRM systeem van Ranshuijsen BV. Zelf vindt hij dat het proces van het maken van de diagrammen belangrijker is, dan het eindresultaat van de diagrammen. 
+    <br /><br />
+    Van zijn feedback heb ik geleerd dat diagrammen belangrijk zijn om te kijken waar de uitdagingen zitten bij het realiseren van software, maar het eindresultaat is vaak minder 
+    belangrijk. Echter zal ik voor de volgende keer erop letten dat de implementatie van de software overeenkomt met de diagrammen. Dit kan ik doen door bijvoorbeeld de diagrammen 
+    constant bij te werken of de diagrammen erbij te houden tijdens de implementatie.
+    <br /><br />
+    Verder kreeg ik voor mijn Use Case diagram de feedback om Use Case descriptions toe te voegen. Deze heb ik uiteindelijk ook toegevoegd, zodat andere gebruikers mijn Use Case 
+    diagram begrijpen (zie Bewijslast I). Een Use Case kan voor mij helder zijn, maar andere gebruikers begrijpen de Use Case misschien niet. Met een Use Case description, kan je 
+    uitleggen wat de stappen zijn om tot het resultaat te komen, welke uitzonderingen er kunnen plaatsvinden en wat het doel is van de Use Case. Ik heb geleerd om voor een Use Case 
+    diagram altijd Use Case descriptions toe te voegen, zodat andere gebruikers het Use Case diagram kunnen begrijpen.
+    <br /><br />
+    Bij mijn Class diagram, kreeg ik als tip een ReportUserRoleAssignment class toe te voegen voor het koppelen van de Report, User en Role class (zie Bewijslast II). Rapporten 
+    hebben namelijk verschillende gebruikers met verschillende rollen en permissies. De ReportUserRoleAssignment class heb ik uiteindelijk nog toegevoegd, zodat de relatie tussen 
+    Report, User en Role duidelijker werd. Ik heb dus geleerd dat er aparte classes nodig zijn om relaties duidelijker te maken.
+    <br /><br />
+    Ondanks dat de implementatie niet helemaal voldoet aan de UML-diagrammen, vind ik dat ik dit leerdoel heb behaald. Er zijn namelijk twee UML-diagrammen opgesteld, die correct 
+    zijn ontworpen. Hierbij heb ik ook rekening gehouden met de componenten van de gekozen rapportagetool, zoals de rapportdesigner en -viewer. Ook heb ik geleerd dat Use Case 
+    descriptions belangrijk zijn bij een Use Case diagram en heb ik voor de ingewikkelde Use Cases een Use Case description toegevoegd. Bij de Class diagram heb ik geleerd om een 
+    aparte class aan te maken, zodat de relatie duidelijker is.
+</p>
+<br />
+<br />
+<h3>Literatuurlijst</h3>
+<p class="apa-source">Leaninfo. (2017, Oktober 3). <i>Stroomdiagram</i> Opgehaald van Leaninfo:</p>
+<p class="tab">https://www.leaninfo.nl/stroomdiagram/</p>
+<p class="apa-source">Lucidchart. (z.d.). <i>UML Use Case Diagram Tutorial.</i> Opgehaald van Lucidchart:</p>
+<p class="tab">https://www.lucidchart.com/pages/uml-use-case-diagram</p>
+<p class="apa-source">Lynch, A. (2021, Juni 9). <i>What is UML | Unified Modeling Language.</i> Opgehaald van Edrawsoft:</p>
+<p class="tab">https://www.edrawsoft.com/what-is-uml-diagram.html</p>
+<br />
 <br />
 @code {
 

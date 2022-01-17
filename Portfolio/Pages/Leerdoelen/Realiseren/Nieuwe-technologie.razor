@@ -8,34 +8,186 @@
 <p>“Ik wil na afloop van mijn 3e jaar stage in staat zijn om Blazor te onderzoeken en te beheersen.”</p><br />
 
 <h3>Inleiding</h3>
+<p>
+    Eén van mijn redenen om bij Ranshuijsen BV stage te lopen, was om meer over Blazor te leren. Tijdens mijn stage heb ik meerdere Proof of Concepts gemaakt met Blazor en 
+    heb ik de gekozen rapportagetool ook in een Blazor webapplicatie geïmplementeerd; het CRM systeem van Ranshuijsen BV. Hieronder lees je meer over mijn ervaringen met Blazor tijdens mijn stage.
+</p>
+<br />
 
-•	Maximaal ½ A4 per leerdoel<br />
-•	Voor elk leerdoel per competentie een inleiding, waarin je uitlegt;<br />
-o	Wat je bewijslast precies inhoudt<br />
-o	Welke stappen je hebt genomen om hiertoe te komen/welk leerproces je hebt doorgemaakt<br />
-o	Wat je ervan hebt geleerd<br />
+<h5>Blazor-Server vs. Blazor WebAssembly</h5>
+<p>
+    Blazor is een webframework waarbij je uit twee hostingmodellen kan kiezen. De app- en componentmodellen zijn hetzelfde, ongeacht het hostingmodel. In het server-side hostingmodel 
+    (Blazor-Server) wordt Blazor op een server uitgevoerd vanuit een ASP.NET Core-app (Roth et al., 2021). De UI-updates, gebeurtenisafhandeling en JavaScript-aanroepen worden via een 
+    SignalR-verbinding afgehandeld. SignalR is een bibliotheek die het proces voor het toevoegen van realtime web functionaliteiten aan een applicatie vereenvoudigt (Gaster et al., 2014). 
+    Een circuit is de status van de server die bij elke aangesloten client hoort. Blazor-Server vereist voor elk browserscherm een afzonderlijk circuit en afzonderlijke instanties van door 
+    de server beheerde componentstatus, zodat de client opnieuw verbinding kan met de server, mocht er sprake zijn van tijdelijke netwerkonderbrekingen.
+    <br /><br />
+    In het client-side-model (Blazor WebAssembly) worden de Blazor-app, de bijbehorende afhankelijkheden en de .NET-runtime gedownload naar de browser en wordt de app rechtstreeks uitgevoerd 
+    in de UI-thread van de browser (Roth et al., 2021). De UI-updates en gebeurtenisafhandeling gebeuren binnen hetzelfde proces. Blazor WebAssembly kan een zelfstandige of een gehoste app 
+    zijn. Een zelfstandige Blazor WebAssembly-app is gemaakt voor implementatie zonder een back-end ASP.NET Core-app om de bestanden te serveren. Een gehoste Blazor WebAssembly-app is gemaakt 
+    voor implementatie met een back-end-app om de bestanden ervan weer te geven. 
+    <br /><br />
+    Hieronder zijn de voor- en nadelen van Blazor-Server en Blazor WebAssembly naast elkaar gezet, zodat je een duidelijk overzicht hebt van de verschillen tussen deze twee hostingmodellen (Roth et al., 2021).
+</p>
+    <table>
+      <tr>
+        <th><p>Blazor-Server</p></th>
+        <th><p>Blazor WebAssembly</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Downloadgrootte is aanzienlijk kleiner</p></th>
+        <th><p>•   Downloadgrootte is groter</p></th>
+      </tr>
+      <tr>
+        <th><p>•   App laadt veel sneller</p></th>
+        <th><p>•   App laden duurt langer</p></th>
+      </tr>
+      <tr>
+        <th><p>•   App maakt optimaal gebruik van de servermogelijkheden</p></th>
+        <th><p>•   Middelen en mogelijkheden van de kant worden volledig benut</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Thin clients ondersteuning (app werkt op browsers die WebAssembly niet ondersteunen en op apparaten met beperkte bron)</p></th>
+        <th><p>•   Geschikte client hardware en software is vereist</p></th>
+      </tr>
+      <tr>
+        <th><p>•   .NET/C#-codebasis en componentcode worden niet aan clients geleverd</p></th>
+        <th><p>•   Werkt wordt van de server naar de klant verplaatst</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Geen offline ondersteuning</p></th>
+        <th><p>•   Offline ondersteuning (geen .NET-serverafhankelijkheid)</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Serverbronnen nodig voor het schalen van apps</p></th>
+        <th><p>•   App is beperkt tot de mogelijkheden van de browser</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Serverloze implementatie is niet mogelijk</p></th>
+        <th><p>•   Serverloze implementatiescenario’s mogelijk</p></th>
+      </tr>
+      <tr>
+        <th><p>•   Maakt gebruik van .NET Core (debuggen is mogelijk)</p></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th><p>•   Hogere latentie</p></th>
+        <th></th>
+      </tr>
+    </table>
+<br />
+
+<h5>Proof of concept</h5>
+<p>
+    Voor mijn Proof of Concepts heb ik gebruik gemaakt van Blazor WebAssembly, aangezien het niet nodig was om servers te gebruiken voor het uitvoeren van de applicaties. De rapportagetools 
+    (DevExpress, Bold Reports en Stimulsoft) die ik moest onderzoeken hadden documentatie beschikbaar voor het creëren van een nieuw project met de rapportagetool of het implementeren van de 
+    rapportagetool in een bestaand project. Ik heb de stappen in de documentatie gevold om de rapportagetools in een nieuw project te implementeren en maakte later nog wat extra 
+    functionaliteiten, zodat ik aan Blazor kon wennen. Voor al mijn Proof of Concepts heb ik een overzichtspagina gemaakt voor rapporten, inclusief knoppen en velden om een rapport te creëren, 
+    te wijzigen of te verwijderen (zie Bewijslast I).
+    <br /><br />
+    Voor de gekozen rapportagetool, die we in de Proof of Concept omgeving (het CRM systeem van Ranshuijsen BV), hebben we een rapportage framework en een draaitabel gemaakt (zie Bewijslast II). 
+    Zelf heb ik veel aan de back-end van de rapportagetool gewerkt, zoals het genereren van een template rapport, het koppelen van de rapportagedesigner- en viewer en het koppelen van een datasource 
+    aan een nieuw rapport. Bij de draaitabel heb ik grotendeels alle functionaliteiten geïmplementeerd, omdat ik met de POC van DevExpress al een draaitabel met drag-and-drop functionaliteit had gemaakt. 
+    Wing Yee heeft de lay-out van de draaitabel later aangepast, zodat het gebruiksvriendelijker werd. Ook heeft ze de code later nog opgesplitst in meerdere sub-componenten, om de herbruikbaarheid en 
+    onderhoudbaarheid te bevorderen.
+    Met de rapportage framework heb je een overzicht van rapportages met verschillende interacties, zoals het creëren/wijzigen/verwijderen van rapportages, het instellen van permissies voor 
+    rapporten en het toevoegen/verwijderen van datacontainers aan een rapport. De draaitabel pagina bestaat uit een draaitabel wizard, waar je kolommen naar een dropzone kan slepen, en een 
+    lege grafiek en draaitabel component. De grafiek en draaitabel zijn aan elkaar gekoppeld, zodat de grafiek zich aanpast wanneer je gebruik maakt van de drill-down interactie. Tijdens het 
+    ontwikkelen van de rapportage framework en draaitabel pagina, heb ik mijn C# kennis kunnen uitbreiden (meer geleerd over dependency injection, inheritance, generic types, reflection etc.) 
+    en heb ik geleerd om met Blazor te werken (Bijvoorbeeld werken met component statussen, dependency injection in Razor pages, subcomponenten) (zie Bewijslast II).
+</p>
 <br />
 
 <h3>Bewijs</h3>
 
 <h5>Bewijslast I</h5>
-Toelichting bewijslast I<br />
-<h5>Bewijslast II (optioneel)</h5>
-Toelichting bewijslast II<br />
+<p class="description">
+    In de onderstaande afbeeldingen zie je de Proof of Concept van de DevExpress rapportagetool.<br /><br />
+    <img src="images/DevExpress1.jpg" />
+    <img src="images/DevExpress2.jpg" />
+    <img src="images/DevExpress3.jpg" />
+    <br /><br />
+    In de onderstaande afbeeldingen zie je de Proof of Concept van de Stimulsoft rapportagetool.<br /><br />
+    <img src="images/Stimulsoft1.jpg" />
+    <img src="images/Stimulsoft2.jpg" />
+    <img src="images/Stimulsoft3.jpg" />
+    <br /><br />
+    In de onderstaande afbeeldingen zie je de Proof of Concept van de Bold Reports rapportagetool.<br /><br />
+    <img src="images/BoldReports1.jpg" />
+    <img src="images/BoldReports2.jpg" />
+    <img src="images/BoldReports3.jpg" />
+</p>
+<br />
+<br />
+
+<h5>Bewijslast II</h5>
+<p class="description">
+    In de onderstaande afbeeldingen zie je de rapportage framework, die mijn mede-stagiaire Wing Yee en ik hebben gemaakt. Wegens gebruik van productiedata, zullen de tabbladen 'permissies' en 'datacontainers' niet getoond worden (op de pagina voor het aanmaken van een nieuw rapport).<br /><br />
+</p>
+    <img src="images/RapportageFramework1.jpg" />
+    <img src="images/RapportageFramework2.jpg" />
+    <img src="images/RapportageFramework3.jpg" />
+    <br /><br />
+<p class="description">
+    In de onderstaande afbeeldingen zie je de draaitabel, die mijn mede-stagiaire Wing yee en ik hebben gemaakt. Wegens gebruik van productiedata, zal er geen voorbeeld zijn van een gemaakte draaitabel.<br /><br />
+</p>
+    <img src="images/Draaitabel1.jpg" />
+    <img src="images/Draaitabel2.jpg" />
+    <br /><br />
+<p class="description">
+    In de onderstaande afbeelding zie je hoe een datasource voor een rapportage genereert wordt. Aangezien het erg lastig was om dependency injection hier te gebruiken, heb ik gebruik gemaakt van een IServiceProvider.
+    Hierdoor lukt het me toch nog om instances van een service aan te roepen, zonder gebruik te maken van dependency injection. Daarnaast heb ik ook gebruik gemaakt van reflection om de gewenste functie van de gewenste datagroupcontainer 
+    aan te roepen. Hierdoor kan ik codeherhaling voorkomen en is het gemakkelijker te lezen, aangezien het maar drie coderegels vereist.<br /><br />
+</p>
+    <img src="images/CodeSnippet1.jpg" />
+    <br /><br />
+<p class="description">
+    In de onderstaande afbeelding zie je hoe een component in meerdere subcomponenten verdeeld kan worden. De afbeelding daarna laat zien hoe je de subcomponent in een andere component kan hergebruiken. <br /><br />
+</p>
+    <img src="images/Subcomponents.jpg" />
+    <img src="images/Subcomponents2.jpg" />
+    <br /><br />
+<p class="description">
+    In de onderstaande afbeelding zie je hoe je een component kan updaten. Wanneer je StateHasChanged aanroept, herlaadt een component zich waardoor je bijvoorbeeld componenten kan updaten. Variabelen die alleen één keer aan het begin van 
+    de rendering van een component worden aangeroepen, moet je binnen de if-statement zetten. Hierdoor zullen deze variabelen niet steeds opnieuw gevuld worden, wanneer StateHasChanged() wordt aangeroepen.<br /><br />
+</p>
+    <img src="images/ComponentStatus.jpg" />
+<br />
+<br />
 <br />
 
 <h3>Feedback</h3>
-Feedback van bedrijfsbegeleider/collega<br />
+<p class="description">
+    Ik ben onder de indruk van wat je in deze kort tijd aan output in de vorm van software hebt kunnen neerzetten in een techniek die nieuw is (voor jou). Je mag trots zijn op het eindresultaat. 
+    Niet alleen omdat je iets werkend hebt kunnen opleveren, maar omdat ik zeker weet dat we dit product lang met veel plezier zullen gaan gebruiken.
+</p>
+<br />
 <br />
 
 <h3>Reflectie</h3>
-Reflectie op feedback van bedrijfsbegeleider/collega<br />
-•	Welke feedback heb je verkregen?<br />
-•	Wat heb je van deze feedback geleerd?<br />
-•	Wat heb je met de feedback gedaan?<br />
-•	Wat zou je een volgende keer anders doen?<br />
-•	Uiteraard kun je hier zelf verdere invulling aan geven in overleg met je stagedocent.<br />
+<p class="description">
+    Als feedback heb ik gekregen dat ik trots mag zijn op het eindresultaat. In een korte tijd heb ik namelijk meerdere Proof of Concepts gemaakt met een techniek die nieuw is (voor mij). 
+    <br /><br />
+    Ik weet nu wat de verschillen zijn tussen Blazor-Server en Blazor WebAssembly en kan deze kennis later gebruiken, wanneer ik met één van deze twee hostingmodellen moet werken. Ook weet ik nu 
+    hoe ik een simpel Blazor project moet beginnen, wat Razor pages zijn en hoe je met component statussen werkt.
+    <br /><br />
+    Tijdens de implementatie van de gekozen rapportagetool werkte ik ook veel met dependency injection, reflection en generic types. Ik beheerste deze drie technieken vrijwel niet, terwijl ze erg 
+    handig zijn om bijvoorbeeld code herhaling te voorkomen. Aangezien er in de repository van het CRM systeem veel gebruik werd gemaakt van dependency injection, reflection en generic types, 
+    leerde ik al snel hoe het werkte in zowel C# class bestanden als in Razor pages.
+    <br /><br />
+    Zelf denk ik dat ik dit leerdoel heb behaald, omdat ik in staat ben om zelf een Blazor project op te starten. Dit heb ik bewezen met de drie Proof of Concepts, die ik heb gemaakt met Blazor, 
+    en de implementatie van de gekozen rapportagetool in het Blazor project van het CRM systeem. Daarnaast weet ik wat de verschillen zijn tussen de twee hostingmoddelen, Blazor-Server en Blazor 
+    WebAssembly, wat Razor pages zijn en hoe component statussen werken.
+</p>
+<br />
+<br />
 
+<h3>Literatuurlijst</h3>
+<p class="apa-source">Gaster, B., Halter, S., Nasir, M., Schonning, N., Dykstra, T., Latham, L., . . . Pasic, A. (2014, Oktober 6). <i>Introduction to SignalR.</i></p>
+<p class="tab">Opgehaald van Microsoft Docs: https://docs.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr</p>
+<p class="apa-source">Roth, D., Latham, L., Anderson, R., Annadevara, B., Pranav, K., Brennan, C., . . . Bhargav, A. (2021, September 11). <i>ASP.NET Core Blazor-hostingmodellen.</i></p>
+<p class="tab">Opgehaald van Microsoft Docs: https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-6.0</p>
+<br />
 <br />
 @code {
 

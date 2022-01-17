@@ -2,6 +2,34 @@
     height: 100%;
 }
 
-h1, h2, h3, h5, p {
+h1, h2, h3, h5, p, .description th, .description td {
     color: white;
+}
+
+.description p, .apa-source {
+    margin-bottom: 0;
+}
+
+.tab {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+th {
+    padding-right: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+td p {
+    margin-bottom: 0;
+    font-weight: normal;
 }

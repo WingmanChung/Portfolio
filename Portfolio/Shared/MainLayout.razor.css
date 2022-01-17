@@ -1,3 +1,22 @@
 .page {
     height: 100%;
 }
+
+.content-container {
+    margin-left: 400px !important;
+    margin-right: 400px !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .content-container {
+        margin-left: 400px !important;
+        margin-right: 400px !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .content-container {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+}

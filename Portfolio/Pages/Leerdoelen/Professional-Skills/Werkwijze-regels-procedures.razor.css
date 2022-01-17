@@ -2,11 +2,16 @@
     height: 100%;
 }
 
-h1, h2, h3, h5, p, dl, dt {
+h1, h2, h3, h5, p {
     color: white;
 }
 
-.description p{
+.description p, .apa-source {
+    margin-bottom: 0;
+}
+
+.tab {
+    margin-left: 40px;
     margin-bottom: 0;
 }
 
@@ -16,13 +21,6 @@ img {
     width: auto;
 }
 
-/*@media screen and (min-width: 1074px) {
-    img {
-        width: 80%;
-    }
-
-@media screen and (max-width: 1074px){
-    img{
-        width: 100%;
-    }
-}*/
+p {
+    font-size: 16px;
+}

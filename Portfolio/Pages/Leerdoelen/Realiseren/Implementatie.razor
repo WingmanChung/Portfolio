@@ -9,34 +9,90 @@
     zoals ze gebruikt worden in software engineering of zoals ze gehanteerd worden binnen het bedrijf.”</p><br />
 
 <h3>Inleiding</h3>
+<p>
+    Deze pagina beschrijft de implementatie van de gekozen rapportagetool in de Proof of Concept omgeving; het CRM systeem van Ranshuijsen BV. Tijdens de implementatie 
+    lette ik op de requirements van de opdracht en de kwaliteitsstandaarden, zoals ze gebruikt worden in software engineering en gehanteerd worden binnen Ranshuijsen BV. 
+    De medewerkers van Ranshuijsen BV gebruiken uiteindelijk de geïmplementeerde rapportagetool, dus het is belangrijk dat de gekozen rapportagetool aan de opgestelde 
+    requirements voldoet. Zo kon ik leren om meer rekening te houden met de wensen van een klant. Daarnaast bestaat de repository van het CRM systeem uit verschillende 
+    projecten met verschillende kwaliteitsstandaarden. Om te kijken of ik me aan de kwaliteitsstandaarden heb gehouden, heb ik een code review gehouden. Zo leer ik meer 
+    over kwaliteitsstandaarden binnen een bedrijf en krijg ik meer ervaring met code reviews. Hieronder lees je meer over de implementatie conform de requirements en met 
+    de kwaliteitsstandaarden, zoals ze gehanteerd worden binnen Ranshuijsen BV.
+</p>
+<br />
 
-•	Maximaal ½ A4 per leerdoel<br />
-•	Voor elk leerdoel per competentie een inleiding, waarin je uitlegt;<br />
-o	Wat je bewijslast precies inhoudt<br />
-o	Welke stappen je hebt genomen om hiertoe te komen/welk leerproces je hebt doorgemaakt<br />
-o	Wat je ervan hebt geleerd<br />
+<h5>Requirements</h5>
+<p>
+    Uit het adviesrapport is gebleken dat DevExpress de meest geschikte rapportagetool voor Ranshuijsen BV is. Samen met mijn mede-stagiaire Wing Yee, heb ik deze 
+    rapportagetool in het CRM systeem van Ranshuijsen BV geïmplementeerd. Uit de Proof of Concept van de DevExpress rapportagetool was gebleken dat het aan alle 
+    requirements kon voldoen, behalve de must-have requirement over een draaitabel met een drag-and-drop functionaliteit. Hiervoor heb ik een alternatief ontdekt, een 
+    DevExpress Blazor component voor het maken van een draaitabel. Aangezien deze geen drag-and-drop functionaliteit had, heb ik deze functionaliteit zelf toegevoegd. 
+    Om te kijken of de geïmplementeerde rapportagetool voldoet aan de eisen van de medewerkers van Ranshuijsen BV, heb ik een niet-technische gebruiker en twee technische 
+    gebruikers gevraagd om de geïmplementeerde rapportagetool en de draaitabel component uit te proberen (zie Bewijslast I). De niet-technische gebruiker is een designer 
+    van Ranshuijsen BV. Hierdoor kregen we naast de functionaliteiten ook gedetailleerd feedback op de gebruiksvriendelijkheid en de vormgeving. De andere twee technische 
+    gebruikers werken veel met CRM en hadden ook deelgenomen aan het interview voor het opstellen van requirements. Uit de gekregen feedback is gebleken dat de rapportage 
+    framework erg gemakkelijk is om mee te werken. De lay-out is duidelijk en het aanmaken van een rapport is eenvoudig. De draaitabel heeft veel feedbackpunten gekregen 
+    over de lay-out, maar qua de functionaliteit waren ze erg tevreden.
+</p>
+<br />
+
+<h5>Kwaliteitsstandaarden</h5>
+<p>
+    De geïmplementeerde rapportagetool is onderdeel van een bestaand product van Ranshuijsen: het CRM systeem. Dit is een systeem wat voornamelijk intern gebruikt wordt 
+    voor facturatie, P&O, uren verantwoording en project management. Momenteel zit het CRM project midden in een migratie van het “oude” .Net framework (4.7) naar .NET 6. 
+    Onderdeel hiervan is ook een nieuw ORM (EF Core). Het CRM systeem wordt intern veel gebruikt als leer/experimenteer tool. Om die reden is het een redelijk chaotische 
+    code-base met veel verschillende ideeën en standaarden (P. den Boer, persoonlijke communicatie, 14 januari 2022). De gebruikte techniek in het project is Blazor met 
+    EF Core als ORM. Om te kijken of mijn geschreven code voldoet aan de kwaliteitsstandaarden van Ranshuijsen BV, heb ik een code review gehouden met Paul den Boer 
+    (zie Bewijslast II). Hij werkt veel met het CRM systeem en heeft veel kennis over de verschillende kwaliteitsstandaarden die Ranshuijsen BV gebruikt. 
+</p>
 <br />
 
 <h3>Bewijs</h3>
 
 <h5>Bewijslast I</h5>
-Toelichting bewijslast I<br />
-<h5>Bewijslast II (optioneel)</h5>
-Toelichting bewijslast II<br />
+<p class="description">
+    In de onderstaande afbeelding zie je de feedbackpunten op de rapportage framework en de draaitabel.<br /><br />
+    <img src="images/FeedbackRequirements.jpg" />
+</p>
+<br />
+<br />
+
+<h5>Bewijslast II</h5>
+<p class="description">
+    In de onderstaande afbeelding zie je de code review feedback van Paul op de rapportage framework en de draaitabel.<br /><br />
+    <img src="images/FeedbackCodeReview.jpg" />
+</p>
+<br />
 <br />
 
 <h3>Feedback</h3>
-Feedback van bedrijfsbegeleider/collega<br />
+<p class="description">
+    Wat mij betreft is dit leerdoel bereikt. Gezien de complexiteit van het CRM project en de opdracht ben ik onder in de indruk van het resultaat. Er is goed gekeken naar 
+    de codebase die er stond en hier naar voldoening verder op door ontwikkelt. De POC’s zijn aantoonbaar werkend en geven het resultaat wat je zou verwachten.
+</p>
+<br />
 <br />
 
 <h3>Reflectie</h3>
-Reflectie op feedback van bedrijfsbegeleider/collega<br />
-•	Welke feedback heb je verkregen?<br />
-•	Wat heb je van deze feedback geleerd?<br />
-•	Wat heb je met de feedback gedaan?<br />
-•	Wat zou je een volgende keer anders doen?<br />
-•	Uiteraard kun je hier zelf verdere invulling aan geven in overleg met je stagedocent.<br />
-
+<p class="description">
+    Als feedback heb ik gekregen dat er goed naar de codebase is gekeken en hier naar voldoening verder op hebben doorontwikkeld. Paul is onder de indruk van het resultaat, 
+    gezien de complexiteit van het CRM project en de opdracht. De POC’s zijn aantoonbaar werkend en geven het resultaat wat je zou verwachten.
+    <br /><br />
+    Tijdens de feedback momenten om te kijken of de geïmplementeerde rapportagetool voldoet aan de opgestelde requirements, heb ik vooral veel feedbackpunten over de UX/UI 
+    van de pagina met de draaitabel. Ik heb geleerd dat het UX/UI gedeelte een belangrijke rol kan spelen in het begrijpen van een bepaalde functionaliteit. De meeste UX/UI 
+    feedback heb ik dan ook verwerkt. Sommige medewerkers vonden het aanmaken van een draaitabel niet intuïtief, maar Rim vertelde me dat ik het niet hoefde aan te passen, 
+    aangezien Excel bijvoorbeeld dezelfde draaitabel lay-out heeft. Voor de volgende keer zou ik bijvoorbeeld eerst kunnen vragen of de medewerker van Ranshuijsen BV ervaring 
+    heeft met het maken van draaitabellen. Zo niet, kan ik hen eerst uitleggen hoe een draaitabel in Excel werkt en hoe deze draaitabel in Excel op de draaitabel in het CRM 
+    systeem lijkt.
+    <br /><br />
+    Verder heb ik geleerd om een code review te houden. Hierbij leerde ik ook om sommige componenten in nog kleinere sub-componenten te verdelen en variabelen een duidelijkere 
+    naam te geven, om de herbruikbaarheid en onderhoudbaarheid te bevorderen. Daarnaast heb ik op één plek gebruik gemaakt van reflection, waardoor ik het complexer heb gemaakt, 
+    dan waarschijnlijk nodig is. De feedbackpunten uit de code review heb ik verwerkt, zodat ik ook leer om codeverbeteringen toe te passen. 
+    <br /><br />
+    Zelf denk ik dat ik dit leerdoel heb behaald, omdat de geïmplementeerde rapportagetool voldoet aan de opgestelde requirements en de kwaliteitsstandaarden zoals ze 
+    gehanteerd worden binnen het bedrijf. Dit blijkt uit de feedbackmomenten met meerdere medewerkers van Ranshuijsen BV en uit de code review met een developer die veel aan 
+    het CRM systeem heeft gewerkt.
+</p>
+<br />
 <br />
 @code {
 

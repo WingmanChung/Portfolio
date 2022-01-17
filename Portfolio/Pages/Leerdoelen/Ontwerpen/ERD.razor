@@ -8,34 +8,97 @@
 <p>“Ik wil na afloop van mijn 3e jaar stage in staat zijn om een ontwerp op te stellen voor een database/databasewarehouse.”</p><br />
 
 <h3>Inleiding</h3>
+<p>
+    Deze pagina beschrijft de Entity Relationship Diagram (ERD) die ik heb ontworpen tijdens mijn stage. Toen ik hier kwam stagelopen, ontdekte ik al snel dat ik erg 
+    weinig kennis had over ERD’s en het ontwerpen van een databasestructuur. Rim heeft me namelijk een aantal vragen gesteld over ERD’s en datamodellen waar ik geen 
+    antwoord op kon geven. Daarom heb ik voor dit leerdoel een ERD gemaakt en de tien richtlijnen doorgenomen voor het ontwerpen van een databasestructuur. De reden 
+    waarom ik een ERD heb gemaakt, komt doordat Ranshuijsen BV relationele databases heeft. Een ERD is een visuele vormgeving van relationele databases (Visual Paradigm, 2011). 
+    Hieronder lees je meer over hoe ik mijn ERD heb gemaakt en de tien richtlijnen voor het ontwerpen van een databasestructuur.
+</p>
+<br />
 
-•	Maximaal ½ A4 per leerdoel<br />
-•	Voor elk leerdoel per competentie een inleiding, waarin je uitlegt;<br />
-o	Wat je bewijslast precies inhoudt<br />
-o	Welke stappen je hebt genomen om hiertoe te komen/welk leerproces je hebt doorgemaakt<br />
-o	Wat je ervan hebt geleerd<br />
+<h5>Ontwerpen van tabellen</h5>
+<p>
+    Rim gaf mij de tip om hoofdstuk 18 ‘Ontwerpen van tabellen’ uit het boek ‘SQL leerboek’ door te nemen, voordat ik begon met het opzetten van de benodigde databasetabellen. 
+    Dankzij dit boek heb ik geleerd dat de databasestructuur eerst ontwerpen moet worden, voordat een database opgezet kan worden (Van der Lans, 1998, p.319). Tijdens het ontwerpen 
+    is het belangrijk dat er bepaald wordt welke tabellen en welke kolommen er nodig zijn. Meestal zijn er meerdere tabelstructuren mogelijk, maar kan de keuze beïnvloed worden 
+    door de volgende factoren.
+</p>
+    <p class="tab">•	Beschikbare opslagruimte</p>
+    <p class="tab">•	Maximaal toelaatbare verwerkingstijd van mutaties</p>
+    <p class="tab">•	Maximaal toelaatbare verwerkingstijd van select-instructies</p>
+    <p class="tab">•	Beveiliging</p>
+<p>
+    <br />
+    Bepaald eerst welke factoren voor de situatie het belangrijkst zijn, voordat je een tabelstructuur kiest. Bij een combinatie van de bovengenoemde factoren treden meestal 
+    conflicten op. Zuinig zijn met de opslagruimte leidt tot trage SELECT -instructies. Snel verwerkte SELECT -instructies vergt meer opslagruimte.
+
+    Voor het ontwerpen van een databasestructuur zijn er tien elementaire richtlijnen. Er bestaan meer richtlijnen, maar de alleen de belangrijkste worden uitgelegd (Van der Lans, 1998, p.319). 
+    Bijlage II bevat de tien belangrijkste richtlijnen voor het ontwerpen van een databasestructuur.
+</p>
+<br />
+
+<h5>ERD</h5>
+<p>
+    Nadat ik de tien richtlijnen had doorgenomen, ben ik de databasestructuur gaan ontwerpen (zie Bewijslast I). Deze databasestructuur heb ik gemaakt met behulp van LucidChart, 
+    een web gebaseerd platform waarmee gebruikers samen kunnen werken aan grafieken en diagrammen. Ik heb ervoor gekozen om met LucidChart een ERD te ontwerpen, omdat ik er al eens 
+    eerder mee heb gewerkt. Voor twee van mijn vier schoolprojecten heb ik namelijk gebruik gemaakt van LucidChart voor het ontwerpen van een ERD. Mijn groepsleden en ik konden kiezen 
+    uit één van hun vele ERD templates en daar tegelijkertijd aan werken. Een ander alternatief was Moqups, maar ik merkte dat het maken van een ERD met Moqups minder flexibel was. 
+    Bij LucidChart trek je een lijn, voor het aanduiden van de relatie tussen twee tabelstructuren, van de ene tabelstructuur naar de andere tabelstructuur. 
+    Bij Moqups kon je echter de lijn overal aan plakken, waardoor je meer moeite moet doen om de lijnen consistent te maken. 
+</p>
 <br />
 
 <h3>Bewijs</h3>
 
 <h5>Bewijslast I</h5>
-Toelichting bewijslast I<br />
-<h5>Bewijslast II (optioneel)</h5>
-Toelichting bewijslast II<br />
+<p class="description">
+    In de onderstaande afbeelding zie je mijn ERD diagram, voordat ik de feedback van Rim heb verwerkt. De plaknotities aan de linkerkant zijn de feedbackpunten van Rim.<br /><br />
+    <img src="images/ERDAfter.jpeg" />
+    <br /><br />
+    In de onderstaande afbeelding zie je mijn ERD diagram, nadat ik de feedbackpunten van Rim heb toegepast.<br /><br />
+    <img src="images/ERDAfter.jpeg" />
+</p>
+<br />
 <br />
 
 <h3>Feedback</h3>
-Feedback van bedrijfsbegeleider/collega<br />
+<p class="description">
+    Ik ben blij te zien dat jullie de in mijn ogen basisvaardigheid van databasedesign onder de knie hebben gekregen. Zoals altijd zijn er een paar iteraties nodig om het juiste model te 
+    krijgen. Op basis van jullie eerste antwoorden over ERD’s had ik niet verwacht dat je dit alsnog zo snel onder de knie zou krijgen.
+</p>
+<br />
 <br />
 
 <h3>Reflectie</h3>
-Reflectie op feedback van bedrijfsbegeleider/collega<br />
-•	Welke feedback heb je verkregen?<br />
-•	Wat heb je van deze feedback geleerd?<br />
-•	Wat heb je met de feedback gedaan?<br />
-•	Wat zou je een volgende keer anders doen?<br />
-•	Uiteraard kun je hier zelf verdere invulling aan geven in overleg met je stagedocent.<br />
+<p class="description">
+    Als feedback heb ik gekregen dat ik de basisvaardigheid van databasedesign al snel begreep, ondanks onze eerste antwoorden over ERD’s aan het begin van onze stage. Ik heb geleerd dat 
+    het belangrijk is om de basisvaardigheid van databasedesign te begrijpen, omdat ik later veel met veel verschillende gegevens zal gaan werken. Deze gegevens moeten efficiënt opgeslagen 
+    of opgehaald worden, zodat de verwerkingstijden van SELECT- en mutatie-instructies minder lang duurt.
+    <br /><br />
+    Het verbaasde mij dat ik veel kennis over de basisvaardigheid van databasedesign, dus ik heb het advies van Rim gevolgd om hoofdstuk 18 ‘Ontwerpen van tabellen’ uit de SQL Leerboek 
+    door te nemen. Dankzij deze hoofdstuk heb ik geleerd wat de tien belangrijkste richtlijnen voor het ontwerpen van een databasestructuur zijn. In de toekomst zal ik deze tien richtlijnen 
+    gebruiken tijdens het ontwerpen van een databasestructuur. Ook zal ik me in de toekomst meer verdiepen in verschillende databases en er vaker mee oefenen, zodat ik deze kennis eventueel 
+    later kan gebruiken bij mijn werk.
+    <br /><br />
+    Tijdens het opstellen van mijn ERD, kreeg ik als belangrijkste feedback om een primaire sleutel te maken van meerdere kandidaat-sleutels (zie Bewijslast I). In de koppeltabellen heb ik 
+    bijvoorbeeld alleen twee of drie kandidaat-sleutels opgeslagen. Hiervoor heb ik toen een extra kolom toegevoegd als primaire sleutel. Echter kan ik de twee of drie kandidaat-sleutels 
+    instellen als één primaire sleutel. Deze feedback heb ik ook verwerkt, zodat ik daar meteen mee kon oefenen. Ik heb dus geleerd om meerdere kandidaat-sleutels als een primaire sleutel 
+    te gebruiken in koppeltabellen. In de toekomst zal ik hier meer rekening mee houden, omdat het minder opslagruimte vereist.
+    <br /><br />
+    In het begin wou ik een ontwerp opstellen voor een database/databasewarehouse. Dit bleek echter niet nodig te zijn, aangezien de database al bestond. Wel moest ik een ontwerp opstellen 
+    voor de tabelstructuren, die nodig zijn voor de geïmplementeerde rapportagetool. Zelf denk ik dat ik dit leerdoel heb behaald, omdat ik nu de basisvaardigheid van databasedesign onder 
+    de knie heb gekregen. Ik heb hiervoor de nodige acties ondernomen om mijn kennis over database design uit te breiden, zoals het doornemen van de tien belangrijkste richtlijnen voor het 
+    ontwerpen van een databasestructuur en het opstellen van een ERD.
+</p>
+<br />
+<br />
 
+<h3>Literatuurlijst</h3>
+<p class="apa-source">Van der Lans, R. (1998). <i>SQL Leerboek 5e</i>, 5de edition. Academic Service</p>
+<p class="apa-source">Visual Paradigm. (2011, Juli 15). <i>How to Design Relational Database with ERD?</i> Opgehaald van Visual Paradigm:</p>
+<p class="tab">https://www.visual-paradigm.com/tutorials/databasedesign.jsp</p>
+<br />
 <br />
 @code {
 

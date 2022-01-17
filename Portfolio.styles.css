@@ -1,0 +1,470 @@
+/* /Pages/Advies.razor.rz.scp.css */
+body[b-2rq9vs0nhj] {
+    height: 100%;
+}
+
+h1[b-2rq9vs0nhj], h2[b-2rq9vs0nhj], h3[b-2rq9vs0nhj], p[b-2rq9vs0nhj]{
+    color: white;
+    font-weight: bold;
+}
+
+p[b-2rq9vs0nhj] {
+    font-size: 16px;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.description[b-2rq9vs0nhj] {
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.description[b-2rq9vs0nhj], p[b-2rq9vs0nhj] {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+/* /Pages/Bijlagen/BijlageI.razor.rz.scp.css */
+body[b-r5jk9iqhaa] {
+    height: 100%;
+}
+
+h1[b-r5jk9iqhaa], h2[b-r5jk9iqhaa], h3[b-r5jk9iqhaa], h5[b-r5jk9iqhaa], p[b-r5jk9iqhaa] {
+    color: white;
+}
+
+.description p[b-r5jk9iqhaa], .apa-source[b-r5jk9iqhaa]{
+    margin-bottom: 0;
+}
+
+.tab[b-r5jk9iqhaa] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-r5jk9iqhaa] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+/* /Pages/Bijlagen/BijlageII.razor.rz.scp.css */
+body[b-m5ez3wg8hh] {
+    height: 100%;
+}
+
+h1[b-m5ez3wg8hh], h2[b-m5ez3wg8hh], h3[b-m5ez3wg8hh], h5[b-m5ez3wg8hh], p[b-m5ez3wg8hh] {
+    color: white;
+}
+
+.description p[b-m5ez3wg8hh], .apa-source[b-m5ez3wg8hh]{
+    margin-bottom: 0;
+}
+
+.tab[b-m5ez3wg8hh] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-m5ez3wg8hh] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+/* /Pages/Index.razor.rz.scp.css */
+body[b-1jma93o9eg] {
+    height: 100%;
+}
+
+h1[b-1jma93o9eg], h2[b-1jma93o9eg], h3[b-1jma93o9eg], p[b-1jma93o9eg] {
+    color: white;
+    text-align: center;
+}
+
+h3[b-1jma93o9eg] {
+    margin-top: 15%;
+    font-size: 50px;
+    font-size: 4vw;
+}
+
+h1[b-1jma93o9eg] {
+    font-size: 150px;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+p[b-1jma93o9eg] {
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+/* /Pages/Introductie/Inleiding.razor.rz.scp.css */
+body[b-8smi4rc5ja] {
+    height: 100%;
+}
+
+h1[b-8smi4rc5ja], h2[b-8smi4rc5ja], h3[b-8smi4rc5ja], h5[b-8smi4rc5ja], p[b-8smi4rc5ja] {
+    color: white;
+}
+
+.dd-links[b-8smi4rc5ja] {
+    margin-left: 20px;
+}
+
+.dd-links a[b-8smi4rc5ja], .redirect-link[b-8smi4rc5ja] {
+    color: orange;
+}
+
+.dd-links a:hover[b-8smi4rc5ja], .redirect-link:hover[b-8smi4rc5ja] {
+    color: coral;
+}
+
+p[b-8smi4rc5ja] {
+    font-size: 16px;
+}
+/* /Pages/Introductie/Voorwoord.razor.rz.scp.css */
+body[b-bvo40o13ev] {
+    height: 100%;
+}
+
+h1[b-bvo40o13ev], h2[b-bvo40o13ev], h3[b-bvo40o13ev], p[b-bvo40o13ev] {
+    color: white;
+}
+
+p[b-bvo40o13ev] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Adviseren/Adviesrapport.razor.rz.scp.css */
+body[b-3ey68dg0qn] {
+    height: 100%;
+}
+
+h1[b-3ey68dg0qn], h2[b-3ey68dg0qn], h3[b-3ey68dg0qn], h5[b-3ey68dg0qn], p[b-3ey68dg0qn] {
+    color: white;
+}
+
+.description p[b-3ey68dg0qn], .apa-source[b-3ey68dg0qn] {
+    margin-bottom: 0;
+}
+
+.tab[b-3ey68dg0qn] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-3ey68dg0qn] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-3ey68dg0qn] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Analyseren/Onderzoek.razor.rz.scp.css */
+body[b-lhotxt6in5] {
+    height: 100%;
+}
+
+h1[b-lhotxt6in5], h2[b-lhotxt6in5], h3[b-lhotxt6in5], h5[b-lhotxt6in5], p[b-lhotxt6in5], .description th[b-lhotxt6in5], .description td[b-lhotxt6in5] {
+    color: white;
+}
+
+.description p[b-lhotxt6in5], .apa-source[b-lhotxt6in5] {
+    margin-bottom: 0;
+}
+
+.tab[b-lhotxt6in5] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-lhotxt6in5] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+th[b-lhotxt6in5] {
+    padding-right: 10px;
+}
+
+p[b-lhotxt6in5] {
+    font-size: 16px;
+}
+
+td p[b-lhotxt6in5] {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+/* /Pages/Leerdoelen/Analyseren/Requirementsanalyse.razor.rz.scp.css */
+body[b-cc69zf5cm8] {
+    height: 100%;
+}
+
+h1[b-cc69zf5cm8], h2[b-cc69zf5cm8], h3[b-cc69zf5cm8], h5[b-cc69zf5cm8], p[b-cc69zf5cm8] {
+    color: white;
+}
+
+.description p[b-cc69zf5cm8], .apa-source[b-cc69zf5cm8]{
+    margin-bottom: 0;
+}
+
+.tab[b-cc69zf5cm8] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-cc69zf5cm8] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-cc69zf5cm8] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Manage-en-Control/SVN.razor.rz.scp.css */
+body[b-5jtz3kvjl3] {
+    height: 100%;
+}
+
+h1[b-5jtz3kvjl3], h2[b-5jtz3kvjl3], h3[b-5jtz3kvjl3], h5[b-5jtz3kvjl3], p[b-5jtz3kvjl3] {
+    color: white;
+}
+
+.description p[b-5jtz3kvjl3], .apa-source[b-5jtz3kvjl3] {
+    margin-bottom: 0;
+}
+
+.tab[b-5jtz3kvjl3] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-5jtz3kvjl3] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+th[b-5jtz3kvjl3]{
+    padding-right: 10px;
+}
+
+p[b-5jtz3kvjl3] {
+    font-size: 16px;
+}
+
+th p[b-5jtz3kvjl3] {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+/* /Pages/Leerdoelen/Ontwerpen/ERD.razor.rz.scp.css */
+body[b-xghgzu73mi] {
+    height: 100%;
+}
+
+h1[b-xghgzu73mi], h2[b-xghgzu73mi], h3[b-xghgzu73mi], h5[b-xghgzu73mi], p[b-xghgzu73mi] {
+    color: white;
+}
+
+.description p[b-xghgzu73mi], .apa-source[b-xghgzu73mi] {
+    margin-bottom: 0;
+}
+
+.tab[b-xghgzu73mi] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-xghgzu73mi] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-xghgzu73mi] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Ontwerpen/UML-diagrammen.razor.rz.scp.css */
+body[b-80wduyu0tr] {
+    height: 100%;
+}
+
+h1[b-80wduyu0tr], h2[b-80wduyu0tr], h3[b-80wduyu0tr], h5[b-80wduyu0tr], p[b-80wduyu0tr] {
+    color: white;
+}
+
+.description p[b-80wduyu0tr], .apa-source[b-80wduyu0tr] {
+    margin-bottom: 0;
+}
+
+.tab[b-80wduyu0tr] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-80wduyu0tr] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-80wduyu0tr] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Professional-Skills/Werkwijze-regels-procedures.razor.rz.scp.css */
+body[b-n6ae2aqx8w] {
+    height: 100%;
+}
+
+h1[b-n6ae2aqx8w], h2[b-n6ae2aqx8w], h3[b-n6ae2aqx8w], h5[b-n6ae2aqx8w], p[b-n6ae2aqx8w] {
+    color: white;
+}
+
+.description p[b-n6ae2aqx8w], .apa-source[b-n6ae2aqx8w] {
+    margin-bottom: 0;
+}
+
+.tab[b-n6ae2aqx8w] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-n6ae2aqx8w] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-n6ae2aqx8w] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Professional-Skills/Zelfstandigheid.razor.rz.scp.css */
+body[b-fvf9e9ejk7] {
+    height: 100%;
+}
+
+h1[b-fvf9e9ejk7], h2[b-fvf9e9ejk7], h3[b-fvf9e9ejk7], h5[b-fvf9e9ejk7], p[b-fvf9e9ejk7] {
+    color: white;
+}
+
+.description p[b-fvf9e9ejk7], .apa-source[b-fvf9e9ejk7] {
+    margin-bottom: 0;
+}
+
+.tab[b-fvf9e9ejk7] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-fvf9e9ejk7] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-fvf9e9ejk7] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Realiseren/Implementatie.razor.rz.scp.css */
+body[b-da0uo9p157] {
+    height: 100%;
+}
+
+h1[b-da0uo9p157], h2[b-da0uo9p157], h3[b-da0uo9p157], h5[b-da0uo9p157], p[b-da0uo9p157] {
+    color: white;
+}
+
+.description p[b-da0uo9p157], .apa-source[b-da0uo9p157] {
+    margin-bottom: 0;
+}
+
+.tab[b-da0uo9p157] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-da0uo9p157] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+p[b-da0uo9p157] {
+    font-size: 16px;
+}
+/* /Pages/Leerdoelen/Realiseren/Nieuwe-technologie.razor.rz.scp.css */
+body[b-xoi0d10itd] {
+    height: 100%;
+}
+
+h1[b-xoi0d10itd], h2[b-xoi0d10itd], h3[b-xoi0d10itd], h5[b-xoi0d10itd], p[b-xoi0d10itd] {
+    color: white;
+}
+
+.description p[b-xoi0d10itd], .apa-source[b-xoi0d10itd] {
+    margin-bottom: 0;
+}
+
+.tab[b-xoi0d10itd] {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+img[b-xoi0d10itd] {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+th[b-xoi0d10itd] {
+    padding-right: 10px;
+}
+
+p[b-xoi0d10itd] {
+    font-size: 16px;
+}
+
+th p[b-xoi0d10itd] {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+/* /Pages/Stageplan.razor.rz.scp.css */
+body[b-2uzxt3iybo] {
+    height: 100%;
+}
+
+h1[b-2uzxt3iybo], h2[b-2uzxt3iybo], h3[b-2uzxt3iybo], p[b-2uzxt3iybo] {
+    color: white;
+}
+
+p[b-2uzxt3iybo] {
+    font-size: 16px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-p531rfodtv] {
+    height: 100%;
+}
+
+.content-container[b-p531rfodtv] {
+    margin-left: 400px !important;
+    margin-right: 400px !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .content-container[b-p531rfodtv] {
+        margin-left: 400px !important;
+        margin-right: 400px !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .content-container[b-p531rfodtv] {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+}

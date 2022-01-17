@@ -85,11 +85,12 @@
     functionaliteiten, zodat ik aan Blazor kon wennen. Voor al mijn Proof of Concepts heb ik een overzichtspagina gemaakt voor rapporten, inclusief knoppen en velden om een rapport te creëren, 
     te wijzigen of te verwijderen (zie Bewijslast I).
     <br /><br />
-    Voor de gekozen rapportagetool, die we in de Proof of Concept omgeving (het CRM systeem van Ranshuijsen BV), hebben we een rapportage framework en een draaitabel gemaakt (zie Bewijslast II). 
+    Voor de gekozen rapportagetool, die we in de Proof of Concept omgeving (het CRM systeem van Ranshuijsen BV) hebben geïmplementeeerd, hebben we een rapportage framework en een draaitabel gemaakt (zie Bewijslast II). 
     Zelf heb ik veel aan de back-end van de rapportagetool gewerkt, zoals het genereren van een template rapport, het koppelen van de rapportagedesigner- en viewer en het koppelen van een datasource 
-    aan een nieuw rapport. Bij de draaitabel heb ik grotendeels alle functionaliteiten geïmplementeerd, omdat ik met de POC van DevExpress al een draaitabel met drag-and-drop functionaliteit had gemaakt. 
+    aan een nieuw rapport. Bij de draaitabel heb ik grotendeels alle functionaliteiten geïmplementeerd, omdat ik met de POC van DevExpress al een draaitabel met een drag-and-drop functionaliteit had gemaakt. 
     Wing Yee heeft de lay-out van de draaitabel later aangepast, zodat het gebruiksvriendelijker werd. Ook heeft ze de code later nog opgesplitst in meerdere sub-componenten, om de herbruikbaarheid en 
     onderhoudbaarheid te bevorderen.
+    <br /><br />
     Met de rapportage framework heb je een overzicht van rapportages met verschillende interacties, zoals het creëren/wijzigen/verwijderen van rapportages, het instellen van permissies voor 
     rapporten en het toevoegen/verwijderen van datacontainers aan een rapport. De draaitabel pagina bestaat uit een draaitabel wizard, waar je kolommen naar een dropzone kan slepen, en een 
     lege grafiek en draaitabel component. De grafiek en draaitabel zijn aan elkaar gekoppeld, zodat de grafiek zich aanpast wanneer je gebruik maakt van de drill-down interactie. Tijdens het 
@@ -173,7 +174,8 @@
     <br /><br />
     Tijdens de implementatie van de gekozen rapportagetool werkte ik ook veel met dependency injection, reflection en generic types. Ik beheerste deze drie technieken vrijwel niet, terwijl ze erg 
     handig zijn om bijvoorbeeld code herhaling te voorkomen. Aangezien er in de repository van het CRM systeem veel gebruik werd gemaakt van dependency injection, reflection en generic types, 
-    leerde ik al snel hoe het werkte in zowel C# class bestanden als in Razor pages.
+    leerde ik al snel hoe het werkte in zowel C# class bestanden als in Razor pages. In de toekomst zal ik deze drie technieken vaker gebruiken, om de herbruikbaarheid en onderhoudbaarheid van code 
+    kan bevorderen.
     <br /><br />
     Zelf denk ik dat ik dit leerdoel heb behaald, omdat ik in staat ben om zelf een Blazor project op te starten. Dit heb ik bewezen met de drie Proof of Concepts, die ik heb gemaakt met Blazor, 
     en de implementatie van de gekozen rapportagetool in het Blazor project van het CRM systeem. Daarnaast weet ik wat de verschillen zijn tussen de twee hostingmoddelen, Blazor-Server en Blazor 
